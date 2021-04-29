@@ -28,6 +28,10 @@ static struct list ready_list;
    when they are first scheduled and removed when they exit. */
 static struct list all_list;
 
+/* List of processes in sleep state, that is, processes that are
+   in BLOCK state. */
+static struct list sleep_list;
+
 /* Idle thread. */
 static struct thread *idle_thread;
 
@@ -92,6 +96,7 @@ thread_init (void)
   lock_init (&tid_lock);
   list_init (&ready_list);
   list_init (&all_list);
+  list_init (&sleep_list);
 
   /* Set up a thread structure for the running thread. */
   initial_thread = running_thread ();
@@ -210,6 +215,41 @@ thread_create (const char *name, int priority,
   thread_unblock (t);
 
   return tid;
+}
+
+/* Make the current thread to sleep. It makes the threads BLOCK
+   state not ready.*/
+void
+thread_sleep (int64_t ticks)
+{
+	struct thread *cur;
+	enum intr_level old_level;
+
+	old_level = intr_disable ();
+	cur = thread_current ();
+
+	ASSERT (cur != idle_thread);
+
+	cur->wakeup = ticks;
+	list_push_back (&sleep_list, &cur->elem);
+	thread_block ();
+
+	intr_set_level (old_level);
+}
+
+void thread_awake (int64_t ticks)
+{
+	struct list_elem *e = list_begin (&sleep_list);
+
+	while (e != list_end (&sleep_list)){
+		struct thread *t = list_entry (e, struct thread, elem);
+		if (t->wakeup <= ticks){
+			e = list_remove (e);
+			thread_unblock (t);
+		}
+		else
+			e = list_next (e);
+	}
 }
 
 /* Puts the current thread to sleep.  It will not be scheduled
