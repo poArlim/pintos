@@ -25,5 +25,12 @@ https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
     + Buffer Cache
     + Synchronization
 
-### 개발 과정 포스팅
-https://poalim.tistory.com/category/CS/Operating%20System
+### 개발 과정 포스팅 (https://poalim.tistory.com/category/CS/Operating%20System)
++ 디버깅 도구 : https://poalim.tistory.com/22
++ 로딩 : https://poalim.tistory.com/23
++ 동기화 : https://poalim.tistory.com/24
++ 스케쥴러 : https://poalim.tistory.com/25
++ Threads : https://poalim.tistory.com/26
++ Alarm Clock : https://poalim.tistory.com/28
++ Priority Scheduling 1 : https://poalim.tistory.com/33
+
