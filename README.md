@@ -2,7 +2,7 @@
 PintOS는 교육용으로 개발된 mini OS 로, 총 4단계의 필수 구현 사항들을 지나면서 OS kernel 을 직접 구현하고 OS kernel 의 동작에 대한 확실한 이해를 목표로 한다.
 
 ### Pintos Documents 
-+ https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
+https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
 
 ### 진행상태
 1. Project 1: Threads
