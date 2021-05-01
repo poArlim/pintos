@@ -7,7 +7,7 @@ https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
 ### 진행상태
 1. Project 1: Threads
     + Alarm Clock (Complete)
-    + Priority Scheduling
+    + Priority Scheduling (Complete)
     + Advanced Scheduler
 2. Project 2: User Programs
     + Process Termination Messages
