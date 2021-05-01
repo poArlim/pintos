@@ -34,3 +34,4 @@ https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
 + Alarm Clock : https://poalim.tistory.com/28
 + Priority Scheduling 1 : https://poalim.tistory.com/33
 + Priority Scheduling 2 : https://poalim.tistory.com/34
++ Priority Inversion : https://poalim.tistory.com/35
