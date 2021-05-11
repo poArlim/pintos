@@ -8,7 +8,7 @@ https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
 1. Project 1: Threads
     + Alarm Clock (Complete)
     + Priority Scheduling (Complete)
-    + Advanced Scheduler
+    + Advanced Scheduler (Complete)
 2. Project 2: User Programs
     + Process Termination Messages
     + Argument Passing
