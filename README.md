@@ -5,7 +5,7 @@ PintOS는 교육용으로 개발된 mini OS 로, 총 4단계의 필수 구현 �
 https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
 
 ### 진행상태
-1. Project 1: Threads
+1. Project 1: Threads (Complete)
     + Alarm Clock (Complete)
     + Priority Scheduling (Complete)
     + Advanced Scheduler (Complete)
@@ -25,7 +25,7 @@ https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
     + Buffer Cache
     + Synchronization
 
-### 개발 과정 포스팅 (https://poalim.tistory.com/category/CS/Operating%20System)
+### 개발 과정 포스팅 (https://poalim.tistory.com/category/CS/Operating%20System%20%28Pintos%29)
 + 디버깅 도구 : https://poalim.tistory.com/22
 + 로딩 : https://poalim.tistory.com/23
 + 동기화 : https://poalim.tistory.com/24
