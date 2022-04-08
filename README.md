@@ -25,7 +25,7 @@ https://web.stanford.edu/class/cs140/projects/pintos/pintos.pdf
     + Buffer Cache
     + Synchronization
 
-### 개발 과정 포스팅 (https://poalim.tistory.com/category/CS/Operating%20System%20%28Pintos%29)
+### 개발 과정 포스팅 (https://poalim.tistory.com/category/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/Pintos)
 + 설치 :  
 + 디버깅 도구 : https://poalim.tistory.com/22
 + 로딩 : https://poalim.tistory.com/23
